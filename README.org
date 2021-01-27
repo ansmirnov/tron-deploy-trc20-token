@@ -4,13 +4,13 @@
 ** Contents                                                           :TOC_3:
   - [[#environment-description][Environment description]]
   - [[#requirements][Requirements]]
-  - [[#quick-start-in-docker][Quick start in Docker]]
   - [[#install-a-tron-box][Install a tron-box]]
   - [[#initialize-a-tron-box-project][Initialize a tron-box project]]
   - [[#install-openzeppelin-solidity][Install openzeppelin-solidity]]
   - [[#compile-smart-contracts][Compile smart contracts]]
   - [[#prepare-network-parameters-for-deployment][Prepare network parameters for deployment]]
   - [[#deploy-smart-contracts][Deploy smart contracts]]
+  - [[#quick-start-in-docker][Quick start in Docker]]
   - [[#references][References]]
 
 ** Environment description
@@ -20,16 +20,6 @@
 ** Requirements
 
 - NodeJS 15.6.0
-
-** Quick start in Docker
-
-#+BEGIN_SRC sh
-docker build -t tron-deploy-trc20 .
-#+END_SRC
-
-#+BEGIN_SRC sh
-docker run tron-deploy-trc20 -it bash
-#+END_SRC
 
 ** Install a tron-box
 
@@ -71,6 +61,16 @@ We use the =--reset= parameter to completely update the contract.
 
 #+BEGIN_SRC sh
 source .env && tronbox migrate --reset
+#+END_SRC
+
+** Quick start in Docker
+
+#+BEGIN_SRC sh
+docker build -t tron-deploy-trc20 .
+#+END_SRC
+
+#+BEGIN_SRC sh
+docker run tron-deploy-trc20 -it bash
 #+END_SRC
 
 ** References
