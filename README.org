@@ -38,6 +38,12 @@ npm install -g tronbox
 tronbox init
 #+END_SRC
 
+** Compile smart contracts
+
+#+BEGIN_SRC sh
+tronbox compile
+#+END_SRC
+
 ** References
 
 1. https://github.com/tron-us/tronbox
