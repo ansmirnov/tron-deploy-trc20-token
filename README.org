@@ -44,6 +44,22 @@ tronbox init
 tronbox compile
 #+END_SRC
 
+** Prepare network parameters for deployment
+
+Write the network parameters in the .env file.
+
+#+BEGIN_SRC sh
+export PRIVATE_KEY="..."
+export NETWORK_ID="1"
+export HOST_PORT=8090
+#+END_SRC
+
+** Deploy smart contracts
+
+#+BEGIN_SRC sh
+tronbox migrate
+#+END_SRC
+
 ** References
 
 1. https://github.com/tron-us/tronbox
