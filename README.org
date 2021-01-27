@@ -6,6 +6,10 @@
   - [[#requirements][Requirements]]
   - [[#quick-start-in-docker][Quick start in Docker]]
   - [[#install-a-tron-box][Install a tron-box]]
+  - [[#initialize-a-tron-box-project][Initialize a tron-box project]]
+  - [[#compile-smart-contracts][Compile smart contracts]]
+  - [[#prepare-network-parameters-for-deployment][Prepare network parameters for deployment]]
+  - [[#deploy-smart-contracts][Deploy smart contracts]]
   - [[#references][References]]
 
 ** Environment description
