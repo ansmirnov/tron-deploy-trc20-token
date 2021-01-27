@@ -1,4 +1,6 @@
 const port = process.env.HOST_PORT || 9090
+const private_key = process.env.PRIVATE_KEY || 'da146374a75310b9666e834ee4ad0866d6f4035967bfc76217c5a495fff9f0d0' // For trontools/quickstart docker image
+const network_id = process.env.NETWORK_ID || '9'
 
 module.exports = {
   networks: {
@@ -35,12 +37,11 @@ Then, run the migration with:
       network_id: '3'
     },
     development: {
-      // For trontools/quickstart docker image
-      privateKey: 'da146374a75310b9666e834ee4ad0866d6f4035967bfc76217c5a495fff9f0d0',
+      privateKey: private_key,
       userFeePercentage: 0,
       feeLimit: 1e8,
       fullHost: 'http://127.0.0.1:' + port,
-      network_id: '9'
+      network_id: network_id
     },
     compilers: {
       solc: {
