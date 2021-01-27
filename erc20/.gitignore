@@ -1,0 +1,7 @@
+
+src/js/metacoin-config.js
+node_modules
+build
+.env
+
+tmp-*

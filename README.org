@@ -1,0 +1,47 @@
+#+TITLE: TRON: Deploy TRC-20 token
+#+PROPERTY: header-args :session *shell tron* :results silent raw
+
+** Contents                                                           :TOC_3:
+  - [[#environment-description][Environment description]]
+  - [[#requirements][Requirements]]
+  - [[#quick-start-in-docker][Quick start in Docker]]
+  - [[#install-a-tron-box][Install a tron-box]]
+  - [[#references][References]]
+
+** Environment description
+
+- Deployed java-tron v4.0.1
+
+** Requirements
+
+- NodeJS 15.6.0
+
+** Quick start in Docker
+
+#+BEGIN_SRC sh
+docker build -t tron-deploy-trc20 .
+#+END_SRC
+
+#+BEGIN_SRC sh
+docker run tron-deploy-trc20 -it bash
+#+END_SRC
+
+** Install a tron-box
+
+#+BEGIN_SRC sh
+npm install -g tronbox
+#+END_SRC
+
+** Initialize a tron-box project
+
+#+BEGIN_SRC sh
+tronbox init
+#+END_SRC
+
+** References
+
+1. https://github.com/tron-us/tronbox
+
+2. https://developers.tron.network/docs/tron-box-user-guide
+
+3. https://docs.openzeppelin.com/contracts/3.x/erc20
