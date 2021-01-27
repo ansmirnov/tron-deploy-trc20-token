@@ -1,1 +1,5 @@
-{}
+{
+  "dependencies": {
+    "openzeppelin-solidity": "^2.2.0"
+  }
+}

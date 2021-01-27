@@ -7,6 +7,7 @@
   - [[#quick-start-in-docker][Quick start in Docker]]
   - [[#install-a-tron-box][Install a tron-box]]
   - [[#initialize-a-tron-box-project][Initialize a tron-box project]]
+  - [[#install-openzeppelin-solidity][Install openzeppelin-solidity]]
   - [[#compile-smart-contracts][Compile smart contracts]]
   - [[#prepare-network-parameters-for-deployment][Prepare network parameters for deployment]]
   - [[#deploy-smart-contracts][Deploy smart contracts]]
@@ -40,6 +41,12 @@ npm install -g tronbox
 
 #+BEGIN_SRC sh
 tronbox init
+#+END_SRC
+
+** Install openzeppelin-solidity
+
+#+BEGIN_SRC lang
+npm install openzeppelin-solidity@2.2.0
 #+END_SRC
 
 ** Compile smart contracts
