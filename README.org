@@ -60,8 +60,10 @@ export HOST_PORT=8090
 
 ** Deploy smart contracts
 
+We use the =--reset= parameter to completely update the contract.
+
 #+BEGIN_SRC sh
-tronbox migrate
+source .env && tronbox migrate --reset
 #+END_SRC
 
 ** References
