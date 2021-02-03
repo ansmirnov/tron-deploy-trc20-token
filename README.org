@@ -9,6 +9,7 @@
   - [[#install-openzeppelin-solidity][Install openzeppelin-solidity]]
   - [[#add-trc20-contract-code][Add TRC20 contract code]]
     - [[#contract-code][Contract code]]
+    - [[#initial-migration-code][Initial migration code]]
     - [[#contract-migration-code][Contract migration code]]
   - [[#compile-smart-contracts][Compile smart contracts]]
   - [[#prepare-network-parameters-for-deployment][Prepare network parameters for deployment]]
@@ -61,6 +62,16 @@ contract TestCoin is ERC20 {
 	_mint(msg.sender, INITIAL_SUPPLY);
     }
 }
+#+END_SRC
+
+*** Initial migration code
+
+#+BEGIN_SRC js :tangle erc20/migrations/1_initial_migration.js
+var Migrations = artifacts.require("./Migrations.sol");
+
+module.exports = function(deployer) {
+  deployer.deploy(Migrations);
+};
 #+END_SRC
 
 *** Contract migration code
