@@ -9,7 +9,7 @@
   - [[#install-openzeppelin-solidity][Install openzeppelin-solidity]]
   - [[#add-trc20-contract-code][Add TRC20 contract code]]
     - [[#contract-code][Contract code]]
-    - [[#migration-code][Migration code]]
+    - [[#contract-migration-code][Contract migration code]]
   - [[#compile-smart-contracts][Compile smart contracts]]
   - [[#prepare-network-parameters-for-deployment][Prepare network parameters for deployment]]
   - [[#deploy-smart-contracts][Deploy smart contracts]]
