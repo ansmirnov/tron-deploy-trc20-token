@@ -7,6 +7,8 @@
   - [[#install-a-tron-box][Install a tron-box]]
   - [[#initialize-a-tron-box-project][Initialize a tron-box project]]
   - [[#install-openzeppelin-solidity][Install openzeppelin-solidity]]
+  - [[#add-trc20-contract-code][Add TRC20 contract code]]
+    - [[#contract-code][Contract code]]
   - [[#compile-smart-contracts][Compile smart contracts]]
   - [[#prepare-network-parameters-for-deployment][Prepare network parameters for deployment]]
   - [[#deploy-smart-contracts][Deploy smart contracts]]
@@ -37,6 +39,27 @@ tronbox init
 
 #+BEGIN_SRC lang
 npm install openzeppelin-solidity@2.2.0
+#+END_SRC
+
+** Add TRC20 contract code
+
+*** Contract code
+
+#+BEGIN_SRC js :erc20/contracts/
+pragma solidity 0.5.4;
+
+import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
+
+contract TestCoin is ERC20 {
+    string public name = "Test";
+    string public symbol = "TST";
+    uint8 public decimals = 6;
+    uint public INITIAL_SUPPLY = 10000000000000000;
+
+    constructor() public {
+	_mint(msg.sender, INITIAL_SUPPLY);
+    }
+}
 #+END_SRC
 
 ** Compile smart contracts
