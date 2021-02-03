@@ -63,7 +63,7 @@ contract TestCoin is ERC20 {
 }
 #+END_SRC
 
-*** Migration code
+*** Contract migration code
 
 #+BEGIN_SRC js :tangle erc20/migrations/2_deploy_contracts.js
 var TestCoin = artifacts.require("./TestCoin.sol");
